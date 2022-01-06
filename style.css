@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Outfit;
+  src: url(/Fonts/static/Outfit-Light.ttf) format("ttf");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Outfit;
+  src: url(/Fonts/static/Outfit-Regular.ttf) format("ttf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Outfit;
+  src: url(/Fonts/static/Outfit-SemiBold.ttf) format("ttf");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+body {
+  margin: 0;
+}
+p {
+  font-size: 18px;
+  color: hsl(217, 31%, 48%);
+  margin: 0;
+  line-height: 22px;
+}
+.bg-dark {
+  background-color: hsl(217, 54%, 11%);
+  padding-top: 70px;
+  padding-bottom: 200px;
+}
+.view {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  border-radius: 3%;
+}
+.container,
+.alw-display {
+  max-width: 310px;
+  padding: 10px 0;
+}
+.main-img {
+  position: relative;
+  margin-bottom: 20px;
+}
+.alw-display {
+  display: block;
+  margin: 0 auto;
+  border-radius: 7%;
+}
+.hover-img {
+  display: none;
+}
+.main-img:hover .hover-img {
+  position: absolute;
+  display: inherit;
+  top: 41%;
+  left: 43%;
+}
+.view-title {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 27px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+.view-title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.view-txt {
+  padding-bottom: 20px;
+}
+.balance,
+.timer {
+  display: flex;
+  align-items: center;
+}
+.flexbox-section {
+  padding-bottom: 40px;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  display: flex;
+  justify-content: space-between;
+}
+.balance-value {
+  font-size: 20px;
+  color: hsl(178, 100%, 50%);
+  margin: 0;
+  margin-left: 5px;
+}
+.avatar {
+  height: 50px;
+  margin-right: 15px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+}
+.flexbox {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.last-info a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+.last-info a:hover {
+  color: hsl(178, 100%, 50%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+@media (max-width: 376px) {
+  .view {
+    max-width: 320px;
+  }
+  .container,
+  .alw-display {
+    max-width: 270px;
+  }
+}
